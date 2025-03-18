@@ -93,6 +93,11 @@ section {
   border-left: 5px solid #FFCB05;
 }
 
+h3 {
+  padding: 10px;
+  margin: 20px;
+}
+
 /* ================= GRID LAYOUTS ================= */
 
 /* Default: 1-column layout for mobile */
@@ -143,6 +148,7 @@ section {
 footer {
   background: #00274C;
   color: white;
+  text-emphasis-color: white;
   text-align: center;
   padding: 15px 0;
   margin-top: 20px;
