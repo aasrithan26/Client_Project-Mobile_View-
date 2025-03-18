@@ -1,0 +1,150 @@
+/* ================= GENERAL STYLES ================= */
+
+/* Import Reset Styles */
+@import url('html5reset.css');
+
+/* Base styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Center content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* ================= HEADER & NAVIGATION ================= */
+
+header {
+  background-color: #00274C;
+  color: white;
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-bottom: 5px solid #FFCB05;
+}
+
+nav {
+    background: #FFCB05;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #00274C;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+/* ================= SKIP TO MAIN CONTENT ================= */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #ffcb05;
+  color: #00274C;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* ================= MAIN CONTENT & SPACING ================= */
+
+main {
+  padding: 20px 25px 20px 20px;
+}
+
+section {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #FFCB05;
+}
+
+/* ================= GRID LAYOUTS ================= */
+
+/* Default: 1-column layout for mobile */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* GRID LAYOUT FOR CAPS PAGE */
+.caps-container {
+  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+}
+
+.caps-container img {
+  width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #00274C;
+    padding: 5px;
+}
+
+/* GRID LAYOUT FOR HOMEPAGE */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  text-align: center;
+}
+
+/* GRID FOR OTHER PAGES */
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 15px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: #00274C;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-top: 5px solid #FFCB05;
+}
