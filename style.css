@@ -72,10 +72,12 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  z-index: 1000;
 }
 
 .skip-link:focus {
-    top: 10px;
+  top: 10px;
+  left: 10px;
 }
 
 /* ================= MAIN CONTENT & SPACING ================= */
@@ -153,4 +155,13 @@ footer {
   padding: 15px 0;
   margin-top: 20px;
   border-top: 5px solid #FFCB05;
+}
+
+/* Fix footer grid spacing (optional for mobile) */
+.footer-grid {
+  padding: 1rem;
+}
+
+.footer-contact h2 {
+  font-size: 1.2rem;
 }
