@@ -12,18 +12,17 @@
     <a href="#main-content" class="skip-link">Skip to Main Content</a>
     
     <header>
-        <div class="header-top">
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="logo">
-        </div>
-        
-        <nav id="primary-nav" class="primary-navigation">
+    <div class="header-top">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="logo" />
+    </div>
+    <nav id="primary-nav" class="primary-navigation" aria-label="Main Navigation">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="page_1.html" class="active">Food Pantry</a></li>
-                <li><a href="page_2.html"class="active">CAPS</a></li>
-                <li><a href="page_3.html"class="active">Study Spaces</a></li>
+                 <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="page_1.html">Food Pantry</a></li>
+                <li><a href="page_2.html">CAPS</a></li>
+                <li><a href="page_3.html">Study Spaces</a></li>
             </ul>
-        </nav>
+    </nav>
         
         <h1>Student Success Portal</h1>
     </header>
@@ -138,23 +137,27 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-contact">
-                <h2>Contact Us</h2>
-                <address>
-                    MSI Academic Advising<br>
-                    School of Information<br>
-                    University of Michigan<br>
-                    <href="tel:7347643493">734-764-3493
-                    <umsi.advising@umich.edu</a>
-                </address>
-            </div>
-            
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 University of Michigan School of Information</p>
-        </div>
-    </footer>
+   <footer>
+    <div class="footer-grid">
+      <div class="footer-contact">
+        <h2>Contact Us</h2>
+        <address>
+          MSI Academic Advising<br>
+          School of Information<br>
+          University of Michigan<br>
+          <a href="tel:7347643493">734-764-3493</a><br>
+          <a href="mailto:umsi.advising@umich.edu">umsi.advising@umich.edu</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamic Year in Footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
